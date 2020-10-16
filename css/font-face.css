@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Arial Rounded MT';
+  font-style: normal;
+  src: url('fonts/arial-rounded-mt.ttf');
+}@font-face {
+  font-family: 'Arial Rounded MT Bold';
+  font-style: normal;
+  src: url('fonts/arial-rounded-mt-bold.ttf');
+}

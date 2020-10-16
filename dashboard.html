@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Alexey">
+
+    <!-- Title Page-->
+    <title>DashBoard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <link href="css/style.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="topNav">
+        <div class="container mb-5">
+          <!--Navbar -->
+          <nav class="mb-1 navbar custom-toggler navbar-expand-lg mdb-color lighten-1">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" class="nav-logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5"
+              aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navMenu" id="navbarSupportedContent-5">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Transfers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reports</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Supplies</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav ml-auto nav-flex-icons">
+                <button class="au-btn au-btn--blue" type="submit">Share</button>
+                <li class="nav-item avatar dropdown">
+                    <a class="nav-link" href="#">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle" alt="avatar image">
+                    </a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+          <!--/.Navbar -->
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <p class="transfer-title">Transfer volume</p>
+                    <h1 class="chart-volume">$1,506.48</h1>
+                    <div id="chart">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="exchange-chart-title"> Exchange rates</h2>
+                    <div class="row m-0">
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/1.png"><abbr class="rate-country-name">Mexico<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">18.00 <abbr>MXN</abbr> <abbr class="percentage">-1.70%</abbr></h3>
+                            </div>
+                            <div id="chart1" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/2.png"><abbr class="rate-country-name">Colombia<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">3,303.45 <abbr>COP</abbr> <abbr class="percentage-active">+0.65%</abbr></h3>
+                            </div>
+                            <div id="chart2" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/3.png"><abbr class="rate-country-name">Dominican Republic<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">49.67 <abbr>DOP</abbr> <abbr class="percentage">-0.70%</abbr></h3>
+                            </div>
+                            <div id="chart3" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/4.png"><abbr class="rate-country-name">Honduras<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">24.65 <abbr>HNL</abbr> <abbr class="percentage">-0.70%</abbr></h3>
+                            </div>
+                            <div id="chart4" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/5.png"><abbr class="rate-country-name">China<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">7.00 <abbr>CNY</abbr> <abbr class="percentage">-0.70%</abbr></h3>
+                            </div>
+                            <div id="chart5" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/6.png" class="mt-20"><abbr class="rate-country-name">India<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">71.16 <abbr>MXN</abbr> <abbr class="percentage">-0.70%</abbr></h3>
+                            </div>
+                            <div id="chart6" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/7.png"><abbr class="rate-country-name">Philippines<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">49.58 <abbr>PHP</abbr> <abbr class="percentage">-0.70%</abbr></h3>
+                            </div>
+                            <div id="chart7" class="rateChart">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3 chartDiv">
+                            <div>
+                                <img src="images/flags/8.png"><abbr class="rate-country-name">Singapore<abbr class="rate-hour">24h</abbr></abbr>
+                                <h3 class="rates">1.33 <abbr>MXN</abbr> <abbr class="percentage">-0.70%</abbr></h3>
+                            </div>
+                            <div id="chart8" class="rateChart">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/apexcharts'></script>
+    <script src="js/irregular-data-series.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+</body>
+
+</html>
+<!-- end document-->

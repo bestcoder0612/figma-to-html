@@ -1,0 +1,228 @@
+.signUpTitle {
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 130.02%;
+	/* or 31px */
+
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: #000000;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.col {
+	padding: 5px !important;
+}
+.form-control {
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: normal;
+	padding: 14px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	border: 1px solid #F1F3F5;
+	border-radius: 5px;
+}
+.form-group {
+	margin-bottom: 0.5em;
+}
+.login-checkbox {
+	display: flex; 
+	flex-direction: row; 
+	margin-top: 28px;
+	padding-bottom: 15px;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: -0.02em;
+	margin-top: 33px;
+	padding-left: 10px;
+}
+.login-checkbox .keep {
+	font-family: Arial Rounded MT Bold;
+}
+.au-btn--green {
+	background-color: #00C12B;
+	border-radius: 7px;
+}
+.createAccount {
+	font-family: Arial Rounded MT Bold;
+	font-style: normal;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.signIn {
+	font-family: Arial Rounded MT Bold;
+	font-style: normal;
+	font-size: 14px;
+	margin-top: -12px;
+}
+.reset-box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+.resetPasword {
+	font-family: Arial Rounded MT Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: -0.02em;
+
+	color: #FFFFFF;
+	padding: 13px 22px;
+	background: #2556E7;
+	border-radius: 7px;
+}
+.register-link p {
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7B8085;
+}
+.register-link a {
+	font-family: Arial Rounded MT Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7B8085 !important;
+}
+.login-checkbox a {
+	color: #406BEA !important;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    border-radius: 3px !important;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 3px !important;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #00C12B;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border-radius: 3px !important;
+}
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    border-radius: 3px !important;
+}
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border-radius: 3px !important;
+}
+
+.input-float-label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 10px;
+    height: 3.5em;
+    box-sizing: border-box;
+    box-shadow: none;
+    position: relative;
+}
+.input-float-label label {
+    z-index: 0;
+	width: 0;
+	height: 0;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-weight: 500;
+	color: #6F7779;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	transition: all 0.3s ease-in-out;
+}
+.input-float-label input {
+  z-index: 1;
+  height: 3.5em; 
+}
+.input-float-label input:valid {
+	padding: 20px 8px 5px 8px; 
+}
+.input-float-label input:valid + label {
+  color: #6F7779;
+  font-size: 12px;
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0); 
+}
+.input-float-label input:focus {
+	padding: 20px 8px 5px 12px;
+	background: #FFFFFF;
+	border: 1px solid #6F7779;
+	border-radius: 0.25rem;
+	border-bottom: 3px solid #2556E7;
+	box-sizing: border-box;
+	box-shadow: none; 
+}
+.input-float-label input:focus + label {
+	color: #6F7779;
+	font-size: 12px;
+	-webkit-transform: translate3d(0, -10px, 0);
+	transform: translate3d(0, -10px, 0); 
+}
+.loginForm .input-float-label input:focus {
+	padding: 20px 8px 5px 12px;
+	background: #FFFFFF;
+	border: 1px solid #6F7779;
+	border-radius: 0.25rem;
+	border-bottom: 3px solid #00C12B;
+	box-sizing: border-box;
+	box-shadow: none; 
+}
+.registerForm .input-float-label input:focus {
+	padding: 20px 8px 5px 12px;
+	background: #FFFFFF;
+	border: 1px solid #6F7779;
+	border-radius: 0.25rem;
+	border-bottom: 3px solid #00C12B;
+	box-sizing: border-box;
+	box-shadow: none; 
+}
